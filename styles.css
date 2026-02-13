@@ -1,0 +1,18 @@
+body {
+  background-image: url('./assets/hero_bg.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.negocio_de_cima {
+  background-color: rgb(112, 12, 12);
+  width: 1364px;
+  height: 70px;
+  border:  solid 3px rgb(56, 0, 0);
+  padding: 12px 36px;
+
+}

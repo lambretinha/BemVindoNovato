@@ -1,8 +1,8 @@
-body {
+.index {
   background-image: url('./assets/hero_bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1366px;
+  width: 1343px;
   height: 711.6px;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   align-items: center; /*aqui eu defino o alinhamento vertical dos elementos do cabeçalho*/
   
   background-color: rgb(112, 12, 12); /*cor do fundo do cabeçalho*/
-  width: 1364px; /*largura do cabeçalho*/
+  width: 1343px; /*largura do cabeçalho*/
   height: 70px; /*altura do cabeçalho*/
   border:  solid 3px rgb(56, 0, 0);/*cor e espessura da borda do cabeçalho*/
   text-align: right; /*alinhamento do conteúdo do cabeçalho à direita*/
@@ -57,7 +57,7 @@ body {
   align-items: center;
   height: calc(100vh - 70px); /* altura da tela menos o cabeçalho */
 }
-.body .fenix_capa_engrenagem {
+.index .fenix_capa_engrenagem {
   width: 570px; /*largura da imagem de capa*/
   height: 570px; /*altura automática da imagem de capa para manter a proporção da imagem*/
 }
@@ -69,25 +69,25 @@ body {
   padding-bottom: 20px; /*espaçamento entre o logo e a borda superior do site*/
 }
 
-.body .logos .logo_capa {
+.index .logos .logo_capa {
   width: 209px; /*largura do logo da FIRST*/
   height: 54.5px; /*altura do logo da FIRST*/
 }
 
-.body .logos .imagem_logo_firjan {
+.index .logos .imagem_logo_firjan {
   width: 211.7px; /*largura do logo da FIRJAN*/
   height: 110.6px; /*altura do logo da FIRJAN*/
 }
 
 .rodape {
-  width: 1366px;
+  width: 1343px;
   display: flex;
   justify-content: center;
   margin-bottom: 0px; /*espaçamento entre o rodapé e a borda inferior do site*/
 }
 
 .rodape .linha-separadora {
-  width: 1366px; /* ou o tamanho que quiser */
+  width: 1343px; /* ou o tamanho que quiser */
   height: 15px; /* espessura */
   background-color: rgb(123, 89, 7);
   border: solid 3px rgb(230, 221, 199); /* cor e espessura da borda */
@@ -96,7 +96,7 @@ body {
 
 .secao_intro{
   background-color: rgb(112, 12, 12); /*cor do fundo da seção de introdução*/
-  width: 1366px; /*largura da seção de introdução*/
+  width: 1343px; /*largura da seção de introdução*/
   height: 768px; /*altura da seção de introdução*/
   display: flex;
   flex-direction: column; /*aqui eu defino a direção dos elementos da seção de introdução como coluna*/
@@ -159,7 +159,7 @@ body {
   line-height: 1.5; /* espaço entre linhas */
 }
 
-.paragrafo_intro .destaque {
+.destaque {
   color: rgb(212, 173, 83); /*cor do destaque do parágrafo da seção de introdução*/
 }
 
@@ -207,14 +207,14 @@ body {
 }
 
 .rodape_secao_intro {
-  width: 1366px;
+  width: 1343px;
   display: flex;
   flex-direction: column;
   min-height: 40px;
 }
 
 .rodape_secao_intro .linha-separadora_intro {
-  width: 1366px; /* ou o tamanho que quiser */
+  width: 1343px; /* ou o tamanho que quiser */
   height: 15px; /* espessura */
   background-color: rgb(123, 89, 7);
   border: solid 3px rgb(230, 221, 199); /* cor e espessura da borda */
@@ -223,7 +223,7 @@ body {
 
 .quem_somos_section {
   background-color: rgb(112, 12, 12); /*cor do fundo da seção de quem somos*/
-  width: 1366px; /*largura da seção de quem somos*/
+  width: 1343px; /*largura da seção de quem somos*/
   height: 1496px; /*altura da seção de quem somos*/
   display: flex;
   flex-direction: column; /*aqui eu defino a direção dos elementos da seção de quem somos como coluna*/
@@ -236,7 +236,7 @@ body {
   margin-left: 20px; /*espaçamento entre o título e a borda esquerda da seção de quem somos*/
   letter-spacing: -5px; /*espaçamento entre as letras do título da seção de quem somos*/
   margin-bottom: 0px;
-  padding-right: 110px;
+  padding-right: 90px;
   padding-top: 35px;
   font-weight: 800;
   align-self: self-end;
@@ -249,7 +249,7 @@ body {
   margin-left: 20px; /*espaçamento entre o texto e a borda esquerda da seção de quem somos*/
   letter-spacing: 25px; /*espaçamento entre as letras do título da seção de quem somos*/
   margin-top: -25px;
-  padding-right: 85px;
+  padding-right: 65px;
   padding-top: 15px;
   font-weight: 700;
   align-self: self-end;
@@ -259,4 +259,126 @@ body {
   margin-top: -265px;
   width: 719.8px;
   height: auto;
+}
+
+.quem_somos_section .globo_quem_somos {
+  position: relative;
+  width: 307px;
+  height: auto;
+  align-self: center;
+  margin-top: -800px;
+}
+
+.quem_somos_section .foto_canto_direito {
+  position: relative;
+  width: 616px;
+  height: auto;
+  align-self: flex-end;
+  margin-top: 619px;
+  margin-right: 0px;
+}
+
+.quem_somos_section .titulo_quem_somos {
+  font-family: "sanchez", serif; /*define a fonte do título da seção quem somos*/
+  font-size: 45px; /*tamanho da fonte do título da seção de quem somos*/
+  color: rgb(255, 255, 255); /*cor do título da seção de quem somos*/
+  margin-left: 760px; /*espaçamento entre o título e a borda esquerda da seção de quem somos*/
+  margin-top: -250px;
+
+
+  font-weight: 400;
+}
+
+.quem_somos_section .quem_somos_texto {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do parágrafo da seção de introdução*/
+  text-indent: 30px; /* recua a primeira linha */
+  margin-left: 760px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 510px; /* largura do parágrafo */
+  margin-top: -1160px; /* ajuste o valor */
+  line-height: 1.5; /* espaço entre linhas */
+}
+
+.quem_somos_section .emoji {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: 725px;
+  margin-top: 10px;
+}
+
+.quem_somos_section .qual_nossa_missao {
+  font-family: "sanchez", serif; /*define a fonte do título da seção quem somos*/
+  font-size: 43px; /*tamanho da fonte do título da seção de quem somos*/
+  color: rgb(255, 255, 255); /*cor do título da seção de quem somos*/
+  margin-left: 760px; /*espaçamento entre o título e a borda esquerda da seção de quem somos*/
+  margin-top: -20px;
+  font-weight: 400;
+}
+
+.quem_somos_section .nossa_missao {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do parágrafo da seção de introdução*/
+  text-indent: 30px; /* recua a primeira linha */
+  margin-left: 760px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 510px; /* largura do parágrafo */
+  margin-top: -40px; /* ajuste o valor */
+}
+
+.quem_somos_section .como_nascemos {
+  font-family: "league spartan", sans-serif; /*define a fonte do título da seção quem somos*/
+  font-size: 80px; /*tamanho da fonte do título da seção de quem somos*/
+  color: rgb(212, 173, 83); /*cor do título da seção de quem somos*/
+  margin-left: 70px; /*espaçamento entre o título e a borda esquerda da seção de quem somos*/
+  margin-top: 110px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-shadow: -5px 3px 0px rgb(255, 255, 255); /* sombra para destacar o título */
+}
+
+.quem_somos_section .como_nascemos_texto {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do parágrafo da seção de introdução*/
+  text-indent: 30px; /* recua a primeira linha */
+  margin-left: 55px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 630px; /* largura do parágrafo */
+  margin-top: -70px; /* ajuste o valor */
+  line-height: 1.5; /* espaço entre linhas */
+}
+
+.biblioteca_body{
+  display: flex;
+  background-image: url('./assets/hero_bg_biblioteca.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1343px;
+  height: 711.6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.biblioteca_body .titulo_biblioteca {
+  position: relative;
+  font-family: "league gothic", sans-serif;
+  font-size: 80px;
+  color: white;
+  margin-top: 35px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

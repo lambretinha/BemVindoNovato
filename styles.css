@@ -142,7 +142,7 @@ body {
   width: 641.2px;
   height: 777.5px;
   margin-left: 655px; /* empurra para a direita */
-  margin-top: -470px; /* ajuste o valor */
+  margin-top: -470px; /* vai pra cima */
 }
 
 .paragrafo_intro {
@@ -204,4 +204,59 @@ body {
 }
 .biblioteca:hover {
   background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.rodape_secao_intro {
+  width: 1366px;
+  display: flex;
+  flex-direction: column;
+  min-height: 40px;
+}
+
+.rodape_secao_intro .linha-separadora_intro {
+  width: 1366px; /* ou o tamanho que quiser */
+  height: 15px; /* espessura */
+  background-color: rgb(123, 89, 7);
+  border: solid 3px rgb(230, 221, 199); /* cor e espessura da borda */
+  margin-top: auto; /* empurra ele pro final da seção */
+}
+
+.quem_somos_section {
+  background-color: rgb(112, 12, 12); /*cor do fundo da seção de quem somos*/
+  width: 1366px; /*largura da seção de quem somos*/
+  height: 1496px; /*altura da seção de quem somos*/
+  display: flex;
+  flex-direction: column; /*aqui eu defino a direção dos elementos da seção de quem somos como coluna*/
+}
+
+.quem_somos_section .titulo11_quem_somos {
+  font-family: "league spartan", sans-serif; /*define a fonte do título da seção quem somos*/
+  font-size: 100px; /*tamanho da fonte do título da seção de quem somos*/
+  color: rgb(255, 255, 255); /*cor do título da seção de quem somos*/
+  margin-left: 20px; /*espaçamento entre o título e a borda esquerda da seção de quem somos*/
+  letter-spacing: -5px; /*espaçamento entre as letras do título da seção de quem somos*/
+  margin-bottom: 0px;
+  padding-right: 110px;
+  padding-top: 35px;
+  font-weight: 800;
+  align-self: self-end;
+}
+
+.quem_somos_section .titulo2_quem_somos {
+  font-family: "league spartan", sans-serif; /*define a fonte do texto da seção quem somos*/
+  font-size: 50px; /*tamanho da fonte do texto da seção de quem somos*/
+  color: rgb(225, 192, 85); /*cor do texto da seção de quem somos*/
+  margin-left: 20px; /*espaçamento entre o texto e a borda esquerda da seção de quem somos*/
+  letter-spacing: 25px; /*espaçamento entre as letras do título da seção de quem somos*/
+  margin-top: -25px;
+  padding-right: 85px;
+  padding-top: 15px;
+  font-weight: 700;
+  align-self: self-end;
+}
+
+.quem_somos_section .fotos_diversas_quem_somos {
+  margin-top: -265px;
+  width: 719.8px;
+  height: auto;
 }

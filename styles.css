@@ -1,7 +1,6 @@
 body {
   background-image: url('./assets/hero_bg.svg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   width: 1366px;
   height: 711.6px;
@@ -93,4 +92,116 @@ body {
   background-color: rgb(123, 89, 7);
   border: solid 3px rgb(230, 221, 199); /* cor e espessura da borda */
   margin-bottom: 0px; /* espaço do final da tela */
+}
+
+.secao_intro{
+  background-color: rgb(112, 12, 12); /*cor do fundo da seção de introdução*/
+  width: 1366px; /*largura da seção de introdução*/
+  height: 768px; /*altura da seção de introdução*/
+  display: flex;
+  flex-direction: column; /*aqui eu defino a direção dos elementos da seção de introdução como coluna*/
+}
+
+.secao_intro .titulo1 {
+  font-family: "league gothic", sans-serif; /*define a fonte do título da seção de introdução*/
+  font-size: 107px; /*tamanho da fonte do título da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do título da seção de introdução*/
+  margin-left: 20px; /*espaçamento entre o título e a borda esquerda da seção de introdução*/
+  letter-spacing: 12px; /*espaçamento entre as letras do título da seção de introdução*/
+  margin-bottom: 0px;
+  padding-left: 100px;
+  padding-top: 15px;
+  font-weight: 300;
+}
+
+.secao_intro .titulo1_2 {
+  font-family: "league gothic", sans-serif; /*define a fonte do texto da seção de introdução*/
+  font-size: 93px; /*tamanho da fonte do texto da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do texto da seção de introdução*/
+  margin-left: 20px; /*espaçamento entre o texto e a borda esquerda da seção de introdução*/
+  letter-spacing: 20px; /*espaçamento entre as letras do título da seção de introdução*/
+  margin-top: -25px;
+  padding-left: 135px;
+  padding: auto;
+  font-weight: 300;
+}
+
+.secao_intro .mao_frase{
+  position: relative;
+  width: 85px;
+  height: 84px;
+  margin-left: 100px;
+  top: -150px; /* em vez de margin-top */
+}
+
+.div_foto_tir {
+  display: flex;
+}
+
+.div_foto_tir .foto_tir {
+  width: 641.2px;
+  height: 777.5px;
+  margin-left: 655px; /* empurra para a direita */
+  margin-top: -470px; /* ajuste o valor */
+}
+
+.paragrafo_intro {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(255, 255, 255); /*cor do parágrafo da seção de introdução*/
+  text-indent: 30px; /* recua a primeira linha */
+  margin-left: 107px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 445px; /* largura do parágrafo */
+  margin-top: -450px; /* ajuste o valor */
+  line-height: 1.5; /* espaço entre linhas */
+}
+
+.paragrafo_intro .destaque {
+  color: rgb(212, 173, 83); /*cor do destaque do parágrafo da seção de introdução*/
+}
+
+.botao_ftc_mais {
+  display: inline-block;
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão de mais informações sobre a FTC*/
+  color: rgb(255, 255, 255); /*cor do texto do botão de mais informações sobre a FTC*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão de mais informações sobre a FTC*/
+  font-size: 40px; /*tamanho da fonte do texto do botão de mais informações sobre a FTC*/
+  padding: 10px 0; /*espaçamento interno do botão de mais informações sobre a FTC*/
+  width: 300px;;
+  border: none; /*tira a borda do botão de mais informações sobre a FTC*/
+  text-decoration: none; /*tira o sublinhado do texto do botão de mais informações sobre a FTC*/
+  margin-left: 107px; /*espaçamento entre o botão de mais informações sobre a FTC e a borda esquerda da seção de introdução*/
+  margin-top: -400px; /*ajuste o valor para posicionar o botão corretamente */
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-left: 180px; /* move para a direita */
+  margin-top: -5px; /* move para baixo */
+}
+
+.botao_ftc_mais:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.biblioteca {
+  display: inline-block;
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão de mais informações sobre a FTC*/
+  color: rgb(255, 255, 255); /*cor do texto do botão de mais informações sobre a FTC*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão de mais informações sobre a FTC*/
+  font-size: 40px; /*tamanho da fonte do texto do botão de mais informações sobre a FTC*/
+  padding: 10px 0; /*espaçamento interno do botão de mais informações sobre a FTC*/
+  width: 300px;;
+  border: none; /*tira a borda do botão de mais informações sobre a FTC*/
+  text-decoration: none; /*tira o sublinhado do texto do botão de mais informações sobre a FTC*/
+  margin-left: 107px; /*espaçamento entre o botão de mais informações sobre a FTC e a borda esquerda da seção de introdução*/
+  margin-top: -400px; /*ajuste o valor para posicionar o botão corretamente */
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-left: 180px; /* move para a direita */
+  margin-top: 18px; /* move para baixo */
+}
+.biblioteca:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
 }

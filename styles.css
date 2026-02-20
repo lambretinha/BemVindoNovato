@@ -2,24 +2,29 @@
   background-image: url('./assets/hero_bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1343px;
+  width: 100vw;
   height: 711.6px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.cabecalho {
-  display: flex; /*aqui eu defino o layout do cabeçalho como flexbox*/
-  justify-content: space-between; /*aqui eu defino o espaçamento entre os elementos do cabeçalho*/
-  align-items: center; /*aqui eu defino o alinhamento vertical dos elementos do cabeçalho*/
-  
-  background-color: rgb(112, 12, 12); /*cor do fundo do cabeçalho*/
-  width: 1343px; /*largura do cabeçalho*/
-  height: 70px; /*altura do cabeçalho*/
-  border:  solid 3px rgb(56, 0, 0);/*cor e espessura da borda do cabeçalho*/
+.cabecalho_index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 12, 12);
+  width: 100vw;
+  max-width: 1343px;
+  height: 70px;
+  border: solid 3px rgb(56, 0, 0);
+  padding: 5px 20px 0 10px;
+  box-sizing: border-box; /* garante que a borda não estoure */
+  margin: 0;
   text-align: right; /*alinhamento do conteúdo do cabeçalho à direita*/
   margin: 0; /*reset do css*/
+
   padding: 0; /*reset do css*/
   box-sizing: border-box; /*reset do css*/
   padding-top: 5px; /*espaçamento entre o conteúdo do cabeçalho e a borda superior do cabeçalho*/
@@ -27,7 +32,7 @@
   padding-right: 20px; /*espaçamento entre o conteúdo do cabeçalho e a borda direita do cabeçalho*/
 }
 
-.cabecalho .link_instagram_cabecalho {
+.cabecalho_index  .link_instagram_cabecalho {
   letter-spacing: 2px; /*espaçamento entre as letras do link do instagram no cabeçalho*/
   order: 1; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
   color: rgb(250, 239, 239); /*cor do link do instagram no cabeçalho*/
@@ -36,14 +41,14 @@
   font-size: 35px; /*tamanho da fonte do link do instagram no cabeçalho*/
 }
 
-.cabecalho i {
+.cabecalho_index i {
   order: 2; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
   color: rgb(250, 239, 239); /*cor da logo do instagram no cabeçalho*/
   font-size: 41.7px; /*tamanho da logo do instagram no cabeçalho*/
   margin-left: 7px; /*margem entre o link e a logo do instagram no cabeçalho*/
 }
 
-.cabecalho .logo_cabecalho {
+.cabecalho_index .logo_cabecalho {
   order: 0; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
   height: 58.2px; /*altura do logo do cabeçalho*/
   width: 291.4px; /*largura do logo do cabeçalho*/
@@ -80,7 +85,8 @@
 }
 
 .rodape {
-  width: 1343px;
+  width: 100%;
+  max-width: 1343px;
   display: flex;
   justify-content: center;
   margin-bottom: 0px; /*espaçamento entre o rodapé e a borda inferior do site*/
@@ -96,7 +102,8 @@
 
 .secao_intro{
   background-color: rgb(112, 12, 12); /*cor do fundo da seção de introdução*/
-  width: 1343px; /*largura da seção de introdução*/
+  width: 100vw;
+  max-width: 1343px; /*largura da seção de introdução*/
   height: 768px; /*altura da seção de introdução*/
   display: flex;
   flex-direction: column; /*aqui eu defino a direção dos elementos da seção de introdução como coluna*/
@@ -164,7 +171,7 @@
 }
 
 .botao_ftc_mais {
-  display: inline-block;
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
   background-color: rgb(202, 141, 50); /*cor do fundo do botão de mais informações sobre a FTC*/
   color: rgb(255, 255, 255); /*cor do texto do botão de mais informações sobre a FTC*/
   font-family: "league gothic", sans-serif; /*define a fonte do texto do botão de mais informações sobre a FTC*/
@@ -186,7 +193,7 @@
 }
 
 .biblioteca {
-  display: inline-block;
+  display: inline-block;  /*faz o botão ficar no lugar certinho*/
   background-color: rgb(202, 141, 50); /*cor do fundo do botão de mais informações sobre a FTC*/
   color: rgb(255, 255, 255); /*cor do texto do botão de mais informações sobre a FTC*/
   font-family: "league gothic", sans-serif; /*define a fonte do texto do botão de mais informações sobre a FTC*/
@@ -360,10 +367,11 @@
 
 .biblioteca_body{
   display: flex;
+  flex-direction: column;
   background-image: url('./assets/hero_bg_biblioteca.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1343px;
+  width: 100%;
   height: 711.6px;
   margin: 0;
   padding: 0;
@@ -371,14 +379,336 @@
 }
 
 .biblioteca_body .titulo_biblioteca {
-  position: relative;
   font-family: "league gothic", sans-serif;
   font-size: 80px;
   color: white;
-  margin-top: 35px;
+  margin-top: -40px;
   font-weight: 400;
   letter-spacing: 10px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+}
+
+.biblioteca_body .cabecalho_biblioteca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 12, 12);
+  width: 100%;
+  height: 70px;
+  border: solid 3px rgb(56, 0, 0);
+  padding: 5px 20px 0 10px;
+  box-sizing: border-box; /* garante que a borda não estoure */
+  margin: 0;
+  text-align: right; /*alinhamento do conteúdo do cabeçalho à direita*/
+  margin: 0; /*reset do css*/
+
+  padding: 0; /*reset do css*/
+  box-sizing: border-box; /*reset do css*/
+  padding-top: 5px; /*espaçamento entre o conteúdo do cabeçalho e a borda superior do cabeçalho*/
+  padding-left: 10px; /*espaçamento entre o conteúdo do cabeçalho e a borda esquerda do cabeçalho*/
+  padding-right: 20px; /*espaçamento entre o conteúdo do cabeçalho e a borda direita do cabeçalho*/
+}
+
+.cabecalho_biblioteca  .link_instagram_cabecalho {
+  letter-spacing: 2px; /*espaçamento entre as letras do link do instagram no cabeçalho*/
+  order: 1; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  color: rgb(250, 239, 239); /*cor do link do instagram no cabeçalho*/
+  text-decoration: none; /*tira o sublinhado do link*/
+  font-family: "league gothic", sans-serif; /*define a fonte do link do instagram no cabeçalho*/
+  font-size: 35px; /*tamanho da fonte do link do instagram no cabeçalho*/
+}
+
+.cabecalho_biblioteca  i {
+  order: 2; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  color: rgb(250, 239, 239); /*cor da logo do instagram no cabeçalho*/
+  font-size: 41.7px; /*tamanho da logo do instagram no cabeçalho*/
+  margin-left: 7px; /*margem entre o link e a logo do instagram no cabeçalho*/
+}
+
+.cabecalho_biblioteca .logo_cabecalho {
+  order: 0; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  height: 58.2px; /*altura do logo do cabeçalho*/
+  width: 291.4px; /*largura do logo do cabeçalho*/
+  vertical-align: middle; /*alinhamento vertical do logo do cabeçalho*/
+  align-self: flex-start; /*alinhamento do logo do cabeçalho à esquerda do cabeçalho*/
+}
+
+.biblioteca_body .back_index {
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão*/
+  color: rgb(255, 255, 255); /*cor do texto do botão*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão*/
+  font-size: 40px; /*tamanho da fonte do texto do botão*/
+  letter-spacing: 8px;
+  padding: 3px 0; /*espaçamento interno do botão*/
+  width: 120px;
+  border: none; /*tira a borda do botão*/
+  text-decoration: none; /*tira o sublinhado do texto do botão*/
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-left: 20px; /* move para a direita */
+  margin-top: -95px; /* move para baixo */
+}
+
+.biblioteca_body .back_index:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  gap: 50px;
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.card-wrapper {
+  position: relative; 
+  width: 367px; 
+}
+
+.explosao_vermelha_biblioteca,
+.explosao_dourada_biblioteca,
+.explosao_vermelha2_biblioteca {
+  position: absolute;
+  height: auto;
+  z-index: 1;
+}
+
+.explosao_vermelha_biblioteca {
+  width: 285px;
+  top: 90px;
+  left: -100px;
+}
+
+.explosao_dourada_biblioteca {
+  width: 252px;
+  top: -130px;
+  left: -60px;
+}
+
+.explosao_vermelha2_biblioteca {
+  width: 298px;
+  top: 180px;
+  left: 150px;
+}
+
+.documentacoes_oficiais,
+.documentacoes_nao_oficiais,
+.tutoriais_praticos {
+  position: relative;
+  width: 291px;
+  height: 392px;
+  background-color: rgb(255, 234, 207);
+  box-shadow: -8px 8px 0px rgb(202, 141, 50);
+  margin: 0 auto; 
+  margin-top: -60px; 
+   z-index: 2; 
+}
+
+.portfolio_lib_img,
+.documentacoes_nao_oficiais_lib_img,
+.tutoriais_praticos_lib_img {
+  width: 266px;
+  height: 144px;
+  margin: 14px;
+}
+
+.botao_documentacoes_oficiais{
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão*/
+  color: rgb(255, 255, 255); /*cor do texto do botão*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão*/
+  font-size: 30px; /*tamanho da fonte do texto do botão*/
+  letter-spacing: 3px;
+  line-height: 1;
+  padding: 10px 0; /*espaçamento interno do botão*/
+  width: 250px;
+  border: none; /*tira a borda do botão*/
+  text-decoration: none; /*tira o sublinhado do texto do botão*/
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botao_documentacoes_oficiais:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.botao_documentacoes_nao_oficiais{
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão*/
+  color: rgb(255, 255, 255); /*cor do texto do botão*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão*/
+  font-size: 30px; /*tamanho da fonte do texto do botão*/
+  letter-spacing: 3px;
+  line-height: 1;
+  padding: 10px 0; /*espaçamento interno do botão*/
+  width: 250px;
+  border: none; /*tira a borda do botão*/
+  text-decoration: none; /*tira o sublinhado do texto do botão*/
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-top: 30px;
+}
+
+.botao_documentacoes_nao_oficiais:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.botao_tutoriais_praticos{
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão*/
+  color: rgb(255, 255, 255); /*cor do texto do botão*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão*/
+  font-size: 30px; /*tamanho da fonte do texto do botão*/
+  letter-spacing: 3px;
+  line-height: 1;
+  padding: 10px 0; /*espaçamento interno do botão*/
+  width: 250px;
+  border: none; /*tira a borda do botão*/
+  text-decoration: none; /*tira o sublinhado do texto do botão*/
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-top: 30px;
+  z-index: 3;
+}
+
+.botao_tutoriais_praticos:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
+}
+
+.txt_doc_ofc {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(0, 0, 0); /*cor do parágrafo da seção de introdução*/
+  margin-left: 20px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 250px; /* largura do parágrafo */
+  margin-top: 10px; /* ajuste o valor */
+}
+
+.txt_documentacoes_nao_ofc {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(0, 0, 0); /*cor do parágrafo da seção de introdução*/
+  margin-left: 20px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 250px; /* largura do parágrafo */
+  margin-top: 10px; /* ajuste o valor */
+}
+
+.txt_tutoriais_praticos {
+  font-family: "Sanchez", serif; /*define a fonte do parágrafo da seção de introdução*/
+  font-size: 18px; /*tamanho da fonte do parágrafo da seção de introdução*/
+  color: rgb(0, 0, 0); /*cor do parágrafo da seção de introdução*/
+  margin-left: 20px; /*espaçamento entre o parágrafo e a borda esquerda da seção de introdução*/
+  text-align: justify;
+  hyphens: auto; /* quebra palavras quando necessário */
+  text-justify: inter-word; /* distribui o espaço entre palavras */
+  width: 250px; /* largura do parágrafo */
+  margin-top: 10px; /* ajuste o valor */
+}
+
+.container-botoes {
+  display: flex;
+  gap: 185px; /* espaço entre os botões */
+  margin-top: 10px;
+  padding: 0 30px;
+  margin-left: 75px; /*pedir ajuda pra wanderson pra ajeitar isso*/
+}
+
+.documentacoes_ofc_body{
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/bg_documentacoes-ofc.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 711.6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.documentacoes_ofc_body .titulo_documentacoes_ofc {
+  font-family: "league gothic", sans-serif;
+  font-size: 80px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.documentacoes_ofc_body .cabecalho_documentacoes_ofc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 12, 12);
+  width: 100%;
+  height: 70px;
+  border: solid 3px rgb(56, 0, 0);
+  padding: 5px 20px 0 10px;
+  box-sizing: border-box; /* garante que a borda não estoure */
+  margin: 0;
+  text-align: right; /*alinhamento do conteúdo do cabeçalho à direita*/
+  margin: 0; /*reset do css*/
+  padding: 0; /*reset do css*/
+  box-sizing: border-box; /*reset do css*/
+  padding-top: 5px; /*espaçamento entre o conteúdo do cabeçalho e a borda superior do cabeçalho*/
+  padding-left: 10px; /*espaçamento entre o conteúdo do cabeçalho e a borda esquerda do cabeçalho*/
+  padding-right: 20px; /*espaçamento entre o conteúdo do cabeçalho e a borda direita do cabeçalho*/
+  margin-top: -17px;
+}
+
+.documentacoes_ofc_body .link_instagram_cabecalho {
+  letter-spacing: 2px; /*espaçamento entre as letras do link do instagram no cabeçalho*/
+  order: 1; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  color: rgb(250, 239, 239); /*cor do link do instagram no cabeçalho*/
+  text-decoration: none; /*tira o sublinhado do link*/
+  font-family: "league gothic", sans-serif; /*define a fonte do link do instagram no cabeçalho*/
+  font-size: 35px; /*tamanho da fonte do link do instagram no cabeçalho*/
+}
+
+.cabecalho_documentacoes_ofc i {
+  order: 2; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  color: rgb(250, 239, 239); /*cor da logo do instagram no cabeçalho*/
+  font-size: 41.7px; /*tamanho da logo do instagram no cabeçalho*/
+  margin-left: 7px; /*margem entre o link e a logo do instagram no cabeçalho*/
+}
+
+.cabecalho_documentacoes_ofc .logo_cabecalho {
+  order: 0; /*aqui eu estabeleço a ordem dos elementos no cabeçalho*/
+  height: 58.2px; /*altura do logo do cabeçalho*/
+  width: 291.4px; /*largura do logo do cabeçalho*/
+  vertical-align: middle; /*alinhamento vertical do logo do cabeçalho*/
+  align-self: flex-start; /*alinhamento do logo do cabeçalho à esquerda do cabeçalho*/
+}
+
+.documentacoes_ofc_body .back_index {
+  display: inline-block; /*faz o botão ficar no lugar certinho*/
+  background-color: rgb(202, 141, 50); /*cor do fundo do botão*/
+  color: rgb(255, 255, 255); /*cor do texto do botão*/
+  font-family: "league gothic", sans-serif; /*define a fonte do texto do botão*/
+  font-size: 40px; /*tamanho da fonte do texto do botão*/
+  letter-spacing: 8px;
+  padding: 3px 0; /*espaçamento interno do botão*/
+  width: 120px;
+  border: none; /*tira a borda do botão*/
+  text-decoration: none; /*tira o sublinhado do texto do botão*/
+  cursor: pointer; /*muda o cursor para uma mãozinha quando passa o mouse sobre o botão*/
+  text-align: center;
+  margin-left: 20px; /* move para a direita */
+  margin-top: -140px; /* move para baixo */
+}
+
+.documentacoes_ofc_body .back_index:hover {
+  background-color: rgb(212, 172, 80); /*cor do fundo do botão quando o mouse passa por cima*/
 }

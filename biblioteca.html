@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem Vindos, novatos!</title>  <!-- título do site -->
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">  <!-- fontes personalçizadas do google -->
@@ -25,7 +27,7 @@
 
 <body class="biblioteca_body">
 
-    <header class="cabecalho"> <!-- Cabeçalho do site -->
+    <header class="cabecalho_biblioteca"> <!-- Cabeçalho do site -->
 
         <img src="./assets/techfenix_cabeçalho.svg" alt="Logo do TechFenixx" class="logo_cabecalho">  <!-- logo da tech como imagem -->
 
@@ -36,8 +38,48 @@
 
     </header>
 
-    <h1 class="titulo_biblioteca">BIBLIOTECA</h1>    
-    
+    <h1 class="titulo_biblioteca">BIBLIOTECA</h1> 
+
+    <a href="./index.html" class="back_index" target="_blank">BACK</a>
+
+    <!-- Container dos 3 cards -->
+    <div class="cards-container">
+        
+        <!-- Card 1 -->
+        <div class="card-wrapper">
+            <img src="./assets/explosao_vermlha.svg" alt="" class="explosao_vermelha_biblioteca">
+            <div class="documentacoes_oficiais">
+                <img src="./assets/foto_portfolio_biblioteca.svg" alt="portfolio" class="portfolio_lib_img">
+                <p class="txt_doc_ofc">Veja exemplos e aprenda como elaborar as documentações oficiais exigidas pela competição FTC, como a apresentação da equipe e o portfólio, entendendo sua estrutura, organização e critérios de avaliação.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-wrapper">
+            <img src="./assets/explosao_dourado.svg" alt="" class="explosao_dourada_biblioteca">
+            <div class="documentacoes_nao_oficiais">
+                <img src="./assets/documentacoes_nao_oficiais_biblioteca.svg" class="documentacoes_nao_oficiais_lib_img">
+                <p class="txt_documentacoes_nao_ofc">Todas as nossas documentações não oficiais, disponibilizadas para te ajudar a entender como e o que as gerações passadas da equipe realizaram ao longo dos anos!</p>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card-wrapper">
+            <img src="./assets/explosao_vermlha.svg" alt="" class="explosao_vermelha2_biblioteca">
+            <div class="tutoriais_praticos">
+                <img src="./assets/tutoriais_praticos.svg" class="tutoriais_praticos_lib_img">
+                <p class="txt_tutoriais_praticos">Para entender de maneira mais dinâmica, que tal assistir a alguns vídeos com tutoriais e dicas sobre as bases da equipe? Eles ajudam a visualizar melhor os processos e a compreender, na prática, como tudo funciona.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-botoes">
+    <a href="./documentacoes_oficiais.html" class="botao_documentacoes_oficiais" target="_blank">DOCUMENTAÇÕES OFICIAIS</a>
+    <a href="./documentacoes_nao_ofc.html" class="botao_documentacoes_nao_oficiais" target="_blank">DOCUMENTAÇÕES NÃO OFICIAIS</a>
+    <a href="./tutoriais_praticos.html" class="botao_tutoriais_praticos" target="_blank">TUTORIAIS PRÁTICOS</a>
+    </div>
+
 </body>
 
 </html>
